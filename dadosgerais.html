@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locais recomendados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="botão home.png" alt="" /></a>
+      <h1>Bairro Bussocaba</h1>
+      <button>
+        <p onmouseover="hioverlay()">Saiba Mais</p>
+      </button>
+      <div id="overlay" onmouseout="byeoverlay()" onmouseover="hioverlay()">
+        <button><a href="dadosgerais.html">Dados diversos</a></button>
+        <button><a href="locais.html">Locais resomendados</a></button>
+      </div>
+    </header>
+    <div id="img">
+      <img src="imgprincipal.png" alt="" id="imgprincipal" />
+      <h1>Bairro Bussocaba</h1>
+    </div>
+    <main>
+      <section id="vias">
+        <h1>Principais Vias</h1>
+        <img src="avnovagranada.png" alt="">
+        <div>
+            <ul>
+              <li><p>Avenida Visconde de Nova Granada;</p></li>
+              <li><p>Avenida Flora;</p></li>
+              <li><p>Avenida Walter Boveri;</p></li>
+              <li><p>Avenida Novo Osasco;</p></li>
+              <li><p>Avenida João de Andrade.</p></li>
+            </ul>
+        </div>
+      </section>
+      <section id="etimologia">
+        <h1>Etimologia</h1>
+        <img src="cobra.png" alt="" />
+        <div>
+          <p>
+            "Bussocaba" é uma palavra oriunda da língua tupi que significa
+            "lugar de chegada de cobra" através da junção dos termos mboîa
+            ("cobra"), syk ("chegar") e aba ("lugar").
+          </p>
+        </div>
+      </section>
+      <section id="segurança">
+        <h1>Dados de Segurança</h1>
+        <img src="tabeladados.png" alt="">
+      </section>
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <td>
+            <div id="borda">
+              <h1>Mais sobre:</h1>
+              <p>
+                O bussopédia é um site criado em busca de trazer informações aos
+                moradores e visitantes para proporcionar uma experiência
+                superior de vida em nosso bairro, com facilidades de informação
+                e curiosidades atrativas.
+              </p>
+            </div>
+          </td>
+          <td>
+            <div>
+              <h1>Contatos:</h1>
+              <ul>
+                <li><p>whatsApp: 3456-3228</p></li>
+                <li><p>e-mail: felipe.figueira@germinare.org.br</p></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </footer>
+    <script>
+      let over = document.getElementById("overlay");
+      console.log(over);
+      function hioverlay() {
+        over.style.display = "inline-block";
+      }
+      function byeoverlay() {
+        over.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

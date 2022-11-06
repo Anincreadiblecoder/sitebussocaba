@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locais recomendados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="botão home.png" alt="" /></a>
+      <h1>Bairro Bussocaba</h1>
+      <button>
+        <p onmouseover="hioverlay()">Saiba Mais</p>
+      </button>
+      <div id="overlay" onmouseout="byeoverlay()" onmouseover="hioverlay()">
+        <button><a href="dadosgerais.html">Dados diversos</a></button>
+        <button><a href="locais.html">Locais resomendados</a></button>
+      </div>
+    </header>
+    <div id="img">
+      <img src="imgprincipal.png" alt="" id="imgprincipal" />
+      <h1>Bairro Bussocaba</h1>
+    </div>
+    <main>
+      <section id="escola">
+        <h1>Escolas</h1>
+        <div id="imgscrol">
+          <img src="mundodossonho.png" alt="" />
+          <img src="mundodacriança.png" alt="" />
+          <img src="joseribeirodesouza.png" alt="" />
+        </div>
+        <ol>
+          <li>
+            <p>E.E. Mundo dos sonhos</p>
+            <p>Av. Valter Boveri, 21 - Bussocaba, Osasco - SP, 06053-120</p>
+          </li>
+          <li>
+            <p>E.E.I. Mundo da criança</p>
+            <p>R. Sérgio Cardoso, 87 - Bussocaba, Osasco - SP, 06056-420</p>
+          </li>
+          <li>
+            <p>E.E. José Ribeiro de Souza</p>
+            <p>R. Sérgio Cardoso, 120 - JD. BUSSOCABA, Osasco - SP, 06056-420</p>
+          </li>
+        </ol>
+      </section>
+      <section id="farmacia">
+        <h1>Farmácias</h1>
+        <div id="imgscrol">
+          <img src="drogsigma.png" alt="" />
+          <img src="drogvivalife.png" alt="" />
+          <img src="drogvalter.png" alt="" />
+        </div>
+        <ol>
+          <li>
+            <p>Farmácia Sigma</p>
+            <p>Av. Novo Osasco, 1529 - Bussocaba, Osasco - SP, 06056-010</p>
+          </li>
+          <li>
+            <p>Farmácia Viva Life</p>
+            <p>Av. Valter Boveri, 258 - Bussocaba, Osasco - SP, 06053-050</p>
+          </li>
+          <li>
+            <p>Farmácia Walter Boveri</p>
+            <p>Av. Valter Boveri, 553 - Salão 03 - Bussocaba, Osasco - SP</p>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <td>
+            <div id="borda">
+              <h1>Mais sobre:</h1>
+              <p>
+                O bussopédia é um site criado em busca de trazer informações aos
+                moradores e visitantes para proporcionar uma experiência
+                superior de vida em nosso bairro, com facilidades de informação
+                e curiosidades atrativas.
+              </p>
+            </div>
+          </td>
+          <td>
+            <div>
+              <h1>Contatos:</h1>
+              <ul>
+                <li><p>whatsApp: 3456-3228</p></li>
+                <li><p>e-mail: felipe.figueira@germinare.org.br</p></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </footer>
+    <script>
+      let over = document.getElementById("overlay");
+      console.log(over);
+      function hioverlay() {
+        over.style.display = "inline-block";
+      }
+      function byeoverlay() {
+        over.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
